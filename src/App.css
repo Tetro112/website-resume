@@ -1,0 +1,14 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.About {
+  z-index: -999;
+}
+
+.NavBar {
+  z-index: 999;
+}
