@@ -1,6 +1,7 @@
 import React from 'react'
 import GitActivity from './GitActivity'
 import {
+    GhActivity,
     UpdatesContainer,
     UpdatesTitle,
 } from './UpdatesElements'
@@ -10,7 +11,7 @@ const Updates = () => {
         <>
             <UpdatesContainer>
                 <UpdatesTitle>Github Activity</UpdatesTitle>
-                <GitActivity/>
+                <GhActivity/>
             </UpdatesContainer>
         </>
     )

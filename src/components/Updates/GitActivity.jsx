@@ -1,4 +1,7 @@
 import React from 'react'
+import {
+    GhHeader,
+} from './UpdatesElements';
 
 const GitActivity = () => {
     
@@ -11,16 +14,17 @@ const GitActivity = () => {
     }
     
     const fullName = 'Vikas Movva';
-    const userName = 'Tetro';
     const avatarUrl = 'https://avatars.githubusercontent.com/u/65259115?';
+    const profileUrl = 'https://github.com/vikas-movva'
     let events = getGitData();
     console.log(events)
     
         
     return (
-        <>
-            
-        </>
+        <div>
+            <GhHeader name={fullName} profilePic={avatarUrl} url={profileUrl} />
+
+        </div>
     )
 }
 
