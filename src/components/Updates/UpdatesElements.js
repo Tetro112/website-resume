@@ -4,7 +4,7 @@ import Header from './Header'
 
 export const UpdatesContainer = styled.div`
   display: grid;
-  grid-template-columns: 20vw 1fr 20vw;
+  grid-template-columns:1fr;
   background: #E59A6F;
   width: 100%;
   justify-content: center;
@@ -17,11 +17,13 @@ export const UpdatesTitle = styled.h1`
   grid-column: 2/3;
 
 `
-export const GhActivity = styled(GitActivity)`
-  grid-column: 2/3;
-  grid-row: 2/3;
-`
 
+// Github activity feed components
+
+export const GhActivity = styled(GitActivity)`
+  
+`
+// Github Header components
 export const GhHeader = styled(Header)`
   display: flex;
   flex-wrap: wrap;
@@ -41,3 +43,7 @@ export const GhLink = styled.a`
   height: auto;
   place-items: center;
 `
+
+// Github Body components
+
+//Github Footer components
