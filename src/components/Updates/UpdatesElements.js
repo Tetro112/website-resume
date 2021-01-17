@@ -1,49 +1,70 @@
 import styled from 'styled-components'
-import GitActivity from './GitActivity'
-import Header from './Header'
+import {FaGithub} from 'react-icons/fa'
+//Constants
+const primary = '#202034'
+const secondary = '#E59A6F'
 
 export const UpdatesContainer = styled.div`
   display: grid;
   grid-template-columns:1fr;
+  grid-template-rows: 1.5fr 8fr;
   background: #E59A6F;
   width: 100%;
   justify-content: center;
+  height: 50vh;
 `
 
 export const UpdatesTitle = styled.h1`
-  color: #000015;
-  font-size: 4vw;
+  color: ${primary};
+  font-size: max(30px, 5vw);
   justify-self: center;
-  grid-column: 2/3;
-
+  height: 5%;
+  margin-top: 1%;
+  margin-bottom: 2%;
 `
 
-// Github activity feed components
+//Github activity components
 
-export const GhActivity = styled(GitActivity)`
-  
-`
-// Github Header components
-export const GhHeader = styled(Header)`
+//Header components
+export const Header = styled.div`
   display: flex;
-  flex-wrap: wrap;
-`
-
-export const GhProfilePic = styled.img`
   width: 100%;
-  height: auto;
-
-
-`
-export const GhName = styled.h1`
-  
-`
-export const GhLink = styled.a`
-  width: 5vw;
-  height: auto;
+  height: 100px;
+  background: ${primary};
   place-items: center;
+  border-radius: 5px; 
 `
 
-// Github Body components
+export const ProfileName = styled.h3`
+  margin-left: 2%;
+  padding: 2%;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  text-decoration: none;
 
-//Github Footer components
+  &:hover{
+    background: #505065;
+  }
+`
+export const ProfilelNameLink = styled.a`
+  text-decoration: none;
+  color: ${secondary};
+`
+
+export const GithubLogo = styled(FaGithub)`
+  width: 10%;
+  height: auto;
+  margin-left: auto;
+  margin-right: 2%;
+  border-radius: 100%;
+`
+export const ProfilePic = styled.img`
+  width: 80px;
+  height: 80px;
+`
+
+export const ProfilelLink = styled.a`
+  width: 80px;
+  height: 80px;
+  margin-left: 2%;
+`
