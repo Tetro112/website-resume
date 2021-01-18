@@ -24,47 +24,59 @@ export const UpdatesTitle = styled.h1`
 `
 
 //Github activity components
-
-//Header components
-export const Header = styled.div`
-  display: flex;
-  width: 100%;
-  height: 100px;
-  background: ${primary};
-  place-items: center;
-  border-radius: 5px; 
+export const GitActivityContainer = styled.div`
+  width: 70%;
+  justify-self: center;
 `
 
-export const ProfileName = styled.h3`
-  margin-left: 2%;
-  padding: 2%;
-  border-radius: 10px;
-  transition: all 0.2s ease;
-  text-decoration: none;
+  //Header components
+  export const Header = styled.div`
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background: ${primary};
+    place-items: center;
+    border-radius: 5px; 
+  `
 
-  &:hover{
-    background: #505065;
-  }
-`
-export const ProfilelNameLink = styled.a`
-  text-decoration: none;
-  color: ${secondary};
-`
+  export const ProfileName = styled.h2`
+    margin-left: 2%;
+    padding: 2%;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    text-decoration: none;
 
-export const GithubLogo = styled(FaGithub)`
-  width: 10%;
-  height: auto;
-  margin-left: auto;
-  margin-right: 2%;
-  border-radius: 100%;
-`
-export const ProfilePic = styled.img`
-  width: 80px;
-  height: 80px;
-`
+    &:hover{
+      background: #505065;
+    }
+  `
+  export const ProfilelNameLink = styled.a`
+    text-decoration: none;
+    color: ${secondary};
+  `
 
-export const ProfilelLink = styled.a`
-  width: 80px;
-  height: 80px;
-  margin-left: 2%;
-`
+  export const GithubLogo = styled(FaGithub)`
+    width: 10%;
+    height: auto;
+    margin-left: auto;
+    margin-right: 2%;
+    border-radius: 100%;
+    color: ${secondary};
+  `
+  export const ProfilePic = styled.img`
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+  `
+
+  export const ProfilelLink = styled.a`
+    width: 80px;
+    height: 80px;
+    margin-left: 1%;
+    
+  `
+
+  //Body components
+  export const Body = styled.div`
+    
+  `

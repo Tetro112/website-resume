@@ -8,10 +8,11 @@ import {
     ProfilePic,
     ProfilelLink,
     ProfilelNameLink,
+    GitActivityContainer,
 } from '../UpdatesElements'
 const GitActivity = (props) => {
     return (
-        <div className = 'git-activity'>
+        <GitActivityContainer>
             <Header>
                 <ProfilelLink href={props.profileUrl} target="_blank">
                     <ProfilePic src={props.profilePic} />
@@ -25,7 +26,7 @@ const GitActivity = (props) => {
                 
                 <GithubLogo/>
             </Header>
-        </div>
+        </GitActivityContainer>
     )
 }
 
