@@ -1,15 +1,16 @@
 import React from 'react'
 import {
+    Body,
     Header,
-} from '../UpdatesElements.js'
-import {
     GithubLogo,
     ProfileName,
     ProfilePic,
     ProfilelLink,
     ProfilelNameLink,
     GitActivityContainer,
-} from '../UpdatesElements'
+    Events,
+    EventsContainer,
+} from '../UpdatesElements.js'
 const GitActivity = (props) => {
     return (
         <GitActivityContainer>
@@ -26,8 +27,21 @@ const GitActivity = (props) => {
                 
                 <GithubLogo/>
             </Header>
+            <Body>
+                <EventsContainer>
+                    {/* {props.events.map((item, index) => {
+                        return(<Events></Events>)
+                    })} */}
+                </EventsContainer>
+            </Body>
         </GitActivityContainer>
     )
 }
 
+// props.events.map((item, index) => {
+//                             return (<Events key={index}>
+//                                 {item.actor.id}
+                                
+//                             </Events>);
+//                         })
 export default GitActivity

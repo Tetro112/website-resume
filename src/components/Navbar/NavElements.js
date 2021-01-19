@@ -46,7 +46,7 @@ export const NavLinks = styled.li`
   text-align: center; 
   &:hover{
       background: #202034;
-      border-bottom: 3px solid #e59a6f;
+      border-bottom: 3px solid #ffca9f;
       color: #E59A6F;
   }
 `

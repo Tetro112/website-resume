@@ -11,7 +11,7 @@ export const UpdatesContainer = styled.div`
   background: #E59A6F;
   width: 100%;
   justify-content: center;
-  height: 50vh;
+  height: ${window.innerHeight - 80}px;
 `
 
 export const UpdatesTitle = styled.h1`
@@ -36,7 +36,10 @@ export const GitActivityContainer = styled.div`
     height: 100px;
     background: ${primary};
     place-items: center;
-    border-radius: 5px; 
+    border-radius: 8px; 
+    border-bottom: 2px solid #505065;
+    position: relative;
+    z-index: 1;
   `
 
   export const ProfileName = styled.h2`
@@ -78,5 +81,33 @@ export const GitActivityContainer = styled.div`
 
   //Body components
   export const Body = styled.div`
+    width: 100%;
+    height: 500px;
+    background: ${primary};
+    position: relative;
+    top: -5px;
+    overflow-y: scroll;
+
+
+    &::-webkit-scrollbar{
+      width: 10px;
+      background: #000015;
+      border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: ${secondary};
+    }
+
+    &::-webkit-scrollbar-thumb:hover{
+      background: #d58A5F;
+    }
+  `
+
+  export const EventsContainer = styled.ul`
+    
+  `
+
+  export const Events = styled.li`
     
   `

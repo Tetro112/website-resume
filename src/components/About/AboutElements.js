@@ -21,7 +21,7 @@ const bounce = keyframes`
 `;
 
 export const AboutContainer = styled.div`
-    height: ${window.innerHeight}px;
+    height: ${window.innerHeight - 80}px;
     background: #000015;
     display: grid;
     grid-template-columns: 1fr 1fr;
