@@ -11,9 +11,9 @@ const Updates = () => {
 
     useEffect(() => {
         async function getGitData() {
-        const response = await fetch('https://api.github.com/users/vikas-movva/events/public');
-        const data = await response.json();
-        setEvents(data.results)
+            const response = await fetch('https://api.github.com/users/vikas-movva/events/public');
+            const data = await response.json();
+            setEvents(data)
         }
 
         getGitData()
@@ -28,7 +28,7 @@ const Updates = () => {
         <>
             <UpdatesContainer>
                 <UpdatesTitle>Github Activity</UpdatesTitle>
-                <GitActivity className='git-activity' profileUrl={profileUrl} profilePic={profilePic} profileName={profileName} events={1} />
+                <GitActivity className='git-activity' profileUrl={profileUrl} profilePic={profilePic} profileName={profileName} events={events} />
                 {console.log(events)}
             </UpdatesContainer>
         </>
