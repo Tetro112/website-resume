@@ -11,6 +11,8 @@ import {
   EventContainer,
   EventUserName,
   EventNameLink,
+  EventRepoLink,
+  EventRepo,
 } from "../UpdatesElements.js";
 import Action from "./EventAction.jsx";
 
@@ -43,6 +45,14 @@ const GitActivity = (props) => {
                   </EventNameLink>
                 </EventUserName>
                 <Action item={item} />
+                <EventRepo>
+                  <EventRepoLink
+                    href={"https://www.github.com/" + item.repo.name}
+                    target="_blank"
+                  >
+                    {item.repo.name}
+                  </EventRepoLink>
+                </EventRepo>
               </Event>
             );
           })}

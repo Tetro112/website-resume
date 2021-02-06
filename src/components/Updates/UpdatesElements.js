@@ -138,3 +138,12 @@ export const EventAction = styled.h3`
   margin-left: 1%;
   color: ${secondary};
 `;
+
+export const EventRepo = styled.h3`
+  margin-left: 1%;
+`;
+
+export const EventRepoLink = styled.a`
+  text-decoration: none;
+  color: #b56a3f;
+`;
