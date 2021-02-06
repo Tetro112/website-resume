@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import {FaGithub} from 'react-icons/fa'
+
 //Constants
 const primary = '#202034'
 const secondary = '#E59A6F'
@@ -59,8 +60,8 @@ export const GitActivityContainer = styled.div`
   `
 
   export const GithubLogo = styled(FaGithub)`
-    width: 10%;
-    height: auto;
+    width: auto;
+    height: 90%;
     margin-left: auto;
     margin-right: 2%;
     border-radius: 100%;
