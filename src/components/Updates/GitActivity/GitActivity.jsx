@@ -13,9 +13,10 @@ import {
   EventNameLink,
   EventRepoLink,
   EventRepo,
+  EventTime,
 } from "../UpdatesElements.js";
 import Action from "./EventAction.jsx";
-
+import moment from "moment";
 import Icon from "./EventIcon.jsx";
 const GitActivity = (props) => {
   return (
@@ -53,6 +54,7 @@ const GitActivity = (props) => {
                     {item.repo.name}
                   </EventRepoLink>
                 </EventRepo>
+                <EventTime>{moment(item.created_at).fromNow()}</EventTime>
               </Event>
             );
           })}

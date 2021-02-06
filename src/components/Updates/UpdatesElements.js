@@ -83,7 +83,8 @@ export const Body = styled.div`
   height: 500px;
   background: #303045;
   position: relative;
-  top: -5px;
+  margin-top: -5px;
+  padding-top: 5px;
   overflow-y: scroll;
 
   &::-webkit-scrollbar {
@@ -96,10 +97,11 @@ export const Body = styled.div`
     background: #d58a5f;
     border-radius: 5px;
     border: 1px solid ${primary};
+    transition: all 0.3s ease-in-out;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: #d58a5f;
+    background: #b56a3f;
   }
 `;
 
@@ -113,6 +115,7 @@ export const Event = styled.li`
   display: flex;
   align-items: center;
   background: #303045;
+  border-bottom: 3px solid ${primary};
 `;
 
 export const EventIcon = styled.div`
@@ -146,4 +149,9 @@ export const EventRepo = styled.h3`
 export const EventRepoLink = styled.a`
   text-decoration: none;
   color: #b56a3f;
+`;
+
+export const EventTime = styled.h5`
+  margin-left: 2%;
+  color: #1c0a00;
 `;

@@ -17,7 +17,7 @@ const Action = (props) => {
         <EventAction>forked</EventAction>
       ) : props.item.type === "CreateEvent" ? (
         props.item.payload.ref_type === "branch" ? (
-          <EventAction>created a branch of</EventAction>
+          <EventAction>branched</EventAction>
         ) : props.item.payload.ref_type === "repository" ? (
           <EventAction>created</EventAction>
         ) : null
