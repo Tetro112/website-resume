@@ -9,7 +9,10 @@ import {
   GitActivityContainer,
   Event,
   EventContainer,
+  EventUserName,
+  EventNameLink,
 } from "../UpdatesElements.js";
+import Action from "./EventAction.jsx";
 
 import Icon from "./EventIcon.jsx";
 const GitActivity = (props) => {
@@ -34,6 +37,12 @@ const GitActivity = (props) => {
             return (
               <Event key={index}>
                 <Icon item={item} />
+                <EventUserName>
+                  <EventNameLink href={props.profileUrl} target="_blank">
+                    {item.actor.login}
+                  </EventNameLink>
+                </EventUserName>
+                <Action item={item} />
               </Event>
             );
           })}

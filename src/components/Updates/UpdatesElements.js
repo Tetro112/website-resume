@@ -118,5 +118,23 @@ export const Event = styled.li`
 export const EventIcon = styled.div`
   margin-left: 2%;
   transform: scale(2);
-  color: #c57a6f;
+  color: ${secondary};
+`;
+
+export const EventUserName = styled.h3`
+  margin-left: 5%;
+  position: relative;
+  top: 1px;
+`;
+export const EventNameLink = styled.a`
+  text-decoration: none;
+  color: ${secondary};
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: #c57a4f;
+  }
+`;
+export const EventAction = styled.h3`
+  margin-left: 1%;
+  color: ${secondary};
 `;
