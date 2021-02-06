@@ -22,13 +22,13 @@ export const UpdatesTitle = styled.h1`
   margin-top: 1%;
   margin-bottom: 2%;
 `;
-
+//-----------------------------------------------------------------------------------------------------
 //Github activity components
 export const GitActivityContainer = styled.div`
   width: 70%;
   justify-self: center;
 `;
-
+//-----------------------------------------------------------------------------------------------------
 //Header components
 export const Header = styled.div`
   display: flex;
@@ -36,7 +36,7 @@ export const Header = styled.div`
   height: 100px;
   background: ${primary};
   place-items: center;
-  border-radius: 6px;
+  border-radius: 6px 6px 0px 0px;
   position: relative;
   z-index: 1;
 `;
@@ -76,15 +76,14 @@ export const ProfilelLink = styled.a`
   height: 80px;
   margin-left: 1%;
 `;
-
+//-----------------------------------------------------------------------------------------------------
 //Body components
 export const Body = styled.div`
   width: 100%;
   height: 500px;
+  border-radius: 0px 0px 6px 6px;
   background: #303045;
   position: relative;
-  margin-top: -5px;
-  padding-top: 5px;
   overflow-y: scroll;
 
   &::-webkit-scrollbar {
@@ -152,6 +151,7 @@ export const EventRepoLink = styled.a`
 `;
 
 export const EventTime = styled.h5`
-  margin-left: 2%;
+  margin-right: 2%;
+  margin-left: auto;
   color: #1c0a00;
 `;
