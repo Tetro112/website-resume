@@ -9,18 +9,9 @@ import {
   GitActivityContainer,
   Event,
   EventContainer,
-  EventIcon,
 } from "../UpdatesElements.js";
 
-import {
-  GitForkIcon,
-  GitCommitIcon,
-  GitPullRequestIcon,
-  GitBranchIcon,
-  GitMergeIcon,
-  RepoIcon,
-  StarFillIcon,
-} from "@primer/octicons-react";
+import Icon from "./EventIcon.jsx";
 const GitActivity = (props) => {
   return (
     <GitActivityContainer>
@@ -42,28 +33,7 @@ const GitActivity = (props) => {
           {props.events.map((item, index) => {
             return (
               <Event key={index}>
-                <EventIcon>
-                  {item.type === "PushEvent" ? (
-                    <GitCommitIcon />
-                  ) : item.type === "PullRequestEvent" ? (
-                    item.payload.action === "opened" ? (
-                      <GitPullRequestIcon />
-                    ) : item.payload.action === "closed" &&
-                      item.payload.pull_request.merged === true ? (
-                      <GitMergeIcon />
-                    ) : null
-                  ) : item.type === "ForkEvent" ? (
-                    <GitForkIcon />
-                  ) : item.type === "CreateEvent" ? (
-                    item.payload.ref_type === "branch" ? (
-                      <GitBranchIcon />
-                    ) : item.payload.ref_type === "repository" ? (
-                      <RepoIcon />
-                    ) : null
-                  ) : item.type === "WatchEvent" ? (
-                    <StarFillIcon />
-                  ) : null}
-                </EventIcon>
+                <Icon item={item} />
               </Event>
             );
           })}

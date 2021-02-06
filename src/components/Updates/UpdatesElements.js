@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { FaGithub } from "react-icons/fa";
-
 //Constants
 const primary = "#202034";
 const secondary = "#E59A6F";
@@ -37,7 +36,7 @@ export const Header = styled.div`
   height: 100px;
   background: ${primary};
   place-items: center;
-  border-radius: 8px;
+  border-radius: 6px;
   position: relative;
   z-index: 1;
 `;
@@ -82,7 +81,7 @@ export const ProfilelLink = styled.a`
 export const Body = styled.div`
   width: 100%;
   height: 500px;
-  background: ${primary};
+  background: #303045;
   position: relative;
   top: -5px;
   overflow-y: scroll;
