@@ -2,11 +2,15 @@ import styled from "styled-components";
 import ItemWrapper from "./ItemWrapper";
 
 export const ProjectsWrapper = styled.div`
-  display: none;
+  height: ${window.innerHeight - 80}px;
+  background: #000015;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 `;
 
 export const ProjectsImage = styled.img`
-  display: none;
+  height: 50%;
+  fill: #fff;
 `;
 
 export const ProjectsContainer = styled.div`

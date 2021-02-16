@@ -2,36 +2,20 @@ import React from "react";
 import {
   ProjectsContainer,
   ProjectsImage,
-  ProjectsContainer,
   ProjectItemWrapper,
-  ItemContent,
   ProjectsWrapper,
-  ProjectItem,
-  ItemTitle,
 } from "./ProjectsElements";
-import projectsObjects from "./content";
+import { projectsObjects } from "./content";
+import Image from "./ProjectsImage.svg";
 
 const Projects = () => {
-  isClicked = [];
-
-  const handleClick = (index) => {};
-
   return (
     <>
       <ProjectsWrapper>
-        <ProjectsImage />
+        <ProjectsImage src={Image} />
         <ProjectsContainer>
           {projectsObjects.map((item, index) => {
-            return (
-              <ProjectItemWrapper key={index} data={item}>
-                {isClicked.push(false)}
-                <ProjectsItem>
-                  <ItemLink href={item.url}>
-                    <ItemTitle>{item.title}</ItemTitle>
-                  </ItemLink>
-                </ProjectsItem>
-              </ProjectItemWrapper>
-            );
+            return <ProjectItemWrapper key={index} item={item} />;
           })}
         </ProjectsContainer>
       </ProjectsWrapper>

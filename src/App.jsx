@@ -3,6 +3,7 @@ import { Navbar } from "./components/Navbar/Navbar.jsx";
 import "./App.css";
 import About from "./components/About/About.jsx";
 import Updates from "./components/Updates/Updates.jsx";
+import Projects from "./components/Projects/Projects.jsx";
 
 class App extends Component {
   state = {};
@@ -12,6 +13,7 @@ class App extends Component {
         <Navbar className="NavBar" />
         <About className="About" />
         <Updates />
+        <Projects />
       </>
     );
   }

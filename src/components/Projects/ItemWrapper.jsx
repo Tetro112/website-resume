@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ItemContent,
   ItemContentContainer,
@@ -6,7 +6,8 @@ import {
   ItemLink,
   ItemTitle,
   LogoContainer,
-  ProjectsItem,
+  ProjectItem,
+  ItemButton,
 } from "./ProjectsElements";
 
 const ItemWrapper = (props) => {
