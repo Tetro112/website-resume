@@ -2,8 +2,9 @@ import React from "react";
 import {
   ProjectsContainer,
   ProjectsImage,
-  ProjectItemWrapper,
+  ProjectItem,
   ProjectsWrapper,
+  ProjectsTitle,
 } from "./ProjectsElements";
 import { projectsObjects } from "./content";
 import Image from "./ProjectsImage.svg";
@@ -12,10 +13,11 @@ const Projects = () => {
   return (
     <>
       <ProjectsWrapper>
+        <ProjectsTitle>Projects</ProjectsTitle>
         <ProjectsImage src={Image} />
         <ProjectsContainer>
           {projectsObjects.map((item, index) => {
-            return <ProjectItemWrapper key={index} item={item} />;
+            return <ProjectItem key={index} item={item} />;
           })}
         </ProjectsContainer>
       </ProjectsWrapper>
