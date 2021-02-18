@@ -47,7 +47,7 @@ export const ProjectsContainer = styled.div`
   width: 90%;
   background: #303045;
   border-radius: 5px;
-  overflow-y: scroll;
+  overflow-y: hidden scroll;
 
   &::-webkit-scrollbar {
     width: 10px;

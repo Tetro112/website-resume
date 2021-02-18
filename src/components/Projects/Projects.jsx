@@ -14,7 +14,7 @@ const Projects = () => {
     <>
       <ProjectsWrapper>
         <ProjectsTitle>Projects</ProjectsTitle>
-        <ProjectsImage src={Image} />
+        <ProjectsImage src={Image} height={100} />
         <ProjectsContainer>
           {projectsObjects.map((item, index) => {
             return <ProjectItem key={index} item={item} />;
