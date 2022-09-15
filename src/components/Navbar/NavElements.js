@@ -116,3 +116,16 @@ export const NavLinksMobileText = styled.p`
   margin-left: auto;
   margin-right: auto;
 `;
+
+export const NavLinksAnchor = styled.a`
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+    color: #ffca9f;
+  }
+  &:hover {
+    color: #bf9777;
+  }
+`;

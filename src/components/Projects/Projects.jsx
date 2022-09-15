@@ -12,7 +12,7 @@ import Image from "./ProjectsImage.svg";
 const Projects = () => {
   return (
     <>
-      <ProjectsWrapper>
+      <ProjectsWrapper id="Projects">
         <ProjectsTitle>Projects</ProjectsTitle>
         <ProjectsImage src={Image} height={100} />
         <ProjectsContainer>

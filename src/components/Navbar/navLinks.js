@@ -3,22 +3,22 @@ import { FaFolder, FaRegEnvelopeOpen, FaFileDownload } from "react-icons/fa";
 export const navLinks = [
     {
         title: 'Updates',
-        url: '#',
+        url: '#Updates',
         icon: <MdUpdate/>
     },
     {
         title: 'Projects',
-        url: '#',
+        url: '#Projects',
         icon: <FaFolder/>
     },
     {
         title: 'Contact',
-        url: '#',
+        url: '#Contact',
         icon: <FaRegEnvelopeOpen/>
     },
     {
         title: 'Resume',
-        url: '#',
+        url: '#Resume',
         icon: <FaFileDownload/>
     },
     

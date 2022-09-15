@@ -26,7 +26,7 @@ const Updates = () => {
     
     return (
         <>
-            <UpdatesContainer>
+            <UpdatesContainer id='Updates'>
                 <UpdatesTitle>Github Activity</UpdatesTitle>
                 <GitActivity className='git-activity' profileUrl={profileUrl} profilePic={profilePic} profileName={profileName} events={events} />
                 {console.log(events)}
