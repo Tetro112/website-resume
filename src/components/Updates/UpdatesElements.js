@@ -115,6 +115,10 @@ export const Event = styled.li`
   align-items: center;
   background: #303045;
   border-bottom: 3px solid ${primary};
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background: #3d3d57;
+  }
 `;
 
 export const EventIcon = styled.div`
@@ -154,4 +158,8 @@ export const EventTime = styled.h5`
   margin-right: 2%;
   margin-left: auto;
   color: #1c0a00;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: ${secondary};
+  }
 `;
