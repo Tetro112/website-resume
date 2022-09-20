@@ -1,21 +1,21 @@
 import styled from "styled-components";
 import { FaGithub } from "react-icons/fa";
 //Constants
-const primary = "#202034";
+const primary = "#000015";
 const secondary = "#E59A6F";
 
 export const UpdatesContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1.5fr 8fr;
-  background: #e59a6f;
+  background-image: linear-gradient(to bottom right, ${primary}, #101025);
   width: 100%;
   justify-content: center;
   height: ${window.innerHeight - 80}px;
 `;
 
 export const UpdatesTitle = styled.h1`
-  color: ${primary};
+  color: ${secondary};
   font-size: max(30px, 5vw);
   justify-self: center;
   height: 5%;
@@ -34,7 +34,7 @@ export const Header = styled.div`
   display: flex;
   width: 100%;
   height: 100px;
-  background: ${primary};
+  background-image: linear-gradient(to bottom right, #000015, #101025);
   place-items: center;
   border-radius: 6px 6px 0px 0px;
   position: relative;
@@ -123,7 +123,7 @@ export const Event = styled.li`
 
 export const EventIcon = styled.div`
   margin-left: 2%;
-  transform: scale(2);
+  transform: scale(2.5);
   color: ${secondary};
 `;
 
