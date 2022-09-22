@@ -47,6 +47,7 @@ export const NavLinks = styled.li`
     background: #202034;
     border-bottom: 3px solid #ffca9f;
     color: #e59a6f;
+    cursor: pointer;
   }
 `;
 
@@ -118,15 +119,10 @@ export const NavLinksMobileText = styled.p`
   margin-right: auto;
 `;
 
-export const NavLinksAnchor = styled.a`
-  text-decoration: none;
-  &:link {
-  }
-  &:visited {
-    text-decoration: none;
-    color: #ffca9f;
-  }
+export const NavLinksAnchor = styled.p`
+  color: #ffca9f;
   &:hover {
     color: #bf9777;
+    cursor: pointer;
   }
 `;
