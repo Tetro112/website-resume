@@ -4,6 +4,7 @@ import "./App.css";
 import About from "./components/About/About.jsx";
 import Updates from "./components/Updates/Updates.jsx";
 import Projects from "./components/Projects/Projects.jsx";
+import ScrollTop from "./ScrollTop.jsx";
 
 class App extends Component {
   state = {};
@@ -14,6 +15,7 @@ class App extends Component {
         <About className="About" />
         <Updates />
         <Projects />
+        <ScrollTop />
       </>
     );
   }
