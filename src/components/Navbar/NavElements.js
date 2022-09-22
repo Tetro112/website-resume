@@ -18,6 +18,7 @@ export const NavContainer = styled.nav`
 
 export const NavLogo = styled.img`
   margin-left: 10px;
+  cursor: pointer;
 `;
 
 export const NavLinksContainer = styled.ul`

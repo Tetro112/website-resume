@@ -24,7 +24,14 @@ export const Navbar = () => {
     <>
       <div className="NavWrapper">
         <NavContainer>
-          <NavLogo src={Logo} alt="Nav Logo" className="nav-logo" />
+          <NavLogo
+            src={Logo}
+            alt="Nav Logo"
+            className="nav-logo"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          />
 
           <NavLinksContainer className="nav-links-container">
             {navLinks.map((item, index) => {
