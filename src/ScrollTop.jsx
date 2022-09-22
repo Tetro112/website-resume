@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { FaChevronUp } from "react-icons/fa";
+import { ScrollTopContainer, IconBackground } from "./ScrollTopElements";
 
 const ScrollTop = () => {
   let [isVisible, setIsVisible] = useState(false);
@@ -24,12 +25,18 @@ const ScrollTop = () => {
   window.addEventListener("scroll", toggleIsVisible);
 
   return (
-    <button>
-      <FaChevronUp
-        onClick={ScrollTop}
-        style={{ display: isVisible ? "inline" : "none" }}
-      />
-    </button>
+    <ScrollTopContainer>
+      <IconBackground style={{ display: isVisible ? "flex" : "none" }}>
+        <FaChevronUp
+          onClick={ScrollTop}
+          style={{
+            display: isVisible ? "inline" : "none",
+            color: "#e59a6f",
+            zIndex: 2,
+          }}
+        />
+      </IconBackground>
+    </ScrollTopContainer>
   );
 };
 
