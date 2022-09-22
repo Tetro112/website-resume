@@ -30,9 +30,7 @@ export const Navbar = () => {
             {navLinks.map((item, index) => {
               return (
                 <NavLinks className="nav-links" key={index}>
-                  <NavLinksAnchor href="{item.url}">
-                    {item.title}
-                  </NavLinksAnchor>
+                  <NavLinksAnchor href={item.url}>{item.title}</NavLinksAnchor>
                 </NavLinks>
               );
             })}

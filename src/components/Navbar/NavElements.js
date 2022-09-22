@@ -118,8 +118,8 @@ export const NavLinksMobileText = styled.p`
 `;
 
 export const NavLinksAnchor = styled.a`
+  text-decoration: none;
   &:link {
-    text-decoration: none;
   }
   &:visited {
     text-decoration: none;
