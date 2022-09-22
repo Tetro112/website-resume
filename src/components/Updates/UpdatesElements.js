@@ -27,6 +27,15 @@ export const UpdatesTitle = styled.h1`
 export const GitActivityContainer = styled.div`
   width: 70%;
   justify-self: center;
+  box-shadow: 0px -20px 50px 30px #202035;
+  /* -webkit-box-shadow: 0px -15px 50px 10px #202035;
+  -moz-box-shadow: 0px -15px 25px 10px #202035; */
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    /* box-shadow: 0px -15px 25px 10px #202035;
+    -webkit-box-shadow: 0px -15px 25px 10px #202035;
+    -moz-box-shadow: 0px -15px 25px 10px #202035; */
+  } ;
 `;
 //-----------------------------------------------------------------------------------------------------
 //Header components
@@ -39,6 +48,9 @@ export const Header = styled.div`
   border-radius: 6px 6px 0px 0px;
   position: relative;
   z-index: 1;
+
+  @media screen and (max-width: 768px) {
+  } ;
 `;
 
 export const ProfileName = styled.h2`
