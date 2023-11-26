@@ -1,4 +1,4 @@
-import { FaAngular, FaReact, FaVuejs } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 
 export const projectsObjects = [
   {
