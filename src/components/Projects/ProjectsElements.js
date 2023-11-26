@@ -1,12 +1,22 @@
 import styled, { keyframes } from "styled-components";
 import Item from "./Item";
+import { css } from "styled-components";
 
-const bounce = keyframes`
-  0% {
-    transform: translateY(0px)
+const slideDown = keyframes`
+  from {
+    transform: translateY(-100%);
   }
-  100% {
-    transform: translateY(-10px)
+  to {
+    transform: translateY(0);
+  }
+`;
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 `;
 
@@ -35,7 +45,7 @@ export const ProjectsTitle = styled.h1`
 export const ProjectsImage = styled.img`
   width: 90%;
   color: #e59a6f;
-  animation: ${bounce} 2s ease-in-out infinite alternate;
+  animation: ${slideDown} 2s;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -72,13 +82,22 @@ export const ProjectItem = styled(Item)`
   height: 80px;
   background: #e59a6f;
 `;
-export const ItemButton = styled.button`
+export const ItemContainer = styled.div`
+  display: flex;
   width: 100%;
   height: 80px;
   background: #e59a6f;
   border: none;
+  padding-left: 5px;
   border-radius: 5px;
   outline: none;
+  cursor: pointer;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  box-shadow: ${(props) =>
+    props.isClicked ? css`0 4px 15px -3px rgba(0, 0, 0, 0.5)` : css`none`};
 `;
 
 export const ItemTitle = styled.h2`
@@ -86,6 +105,7 @@ export const ItemTitle = styled.h2`
   padding: 0;
   margin: 0;
   width: fit-content;
+  user-select: none;
 `;
 
 export const ItemLink = styled.a`
@@ -95,8 +115,19 @@ export const ItemLink = styled.a`
 
 export const ItemContent = styled.div`
   background: #d58a5f;
+  margin-top: -5px;
+  padding-top: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  animation: ${slideDown} 0.5s ease-out;
+  position: relative;
+  z-index: 1;
 `;
 
 export const ItemDescription = styled.h4``;
 
-export const LogoContainer = styled.div``;
+export const LogoContainer = styled.div`
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #202034;
+`;

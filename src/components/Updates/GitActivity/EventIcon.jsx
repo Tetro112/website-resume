@@ -1,7 +1,7 @@
 import React from "react";
 import { EventIcon } from "../UpdatesElements";
 import {
-  GitForkIcon,
+  RepoForkedIcon,
   GitCommitIcon,
   GitPullRequestIcon,
   GitBranchIcon,
@@ -23,7 +23,7 @@ const Icon = (props) => {
           <GitMergeIcon />
         ) : null
       ) : props.item.type === "ForkEvent" ? (
-        <GitForkIcon />
+        <RepoForkedIcon />
       ) : props.item.type === "CreateEvent" ? (
         props.item.payload.ref_type === "branch" ? (
           <GitBranchIcon />

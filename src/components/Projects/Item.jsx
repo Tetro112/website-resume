@@ -4,7 +4,7 @@ import {
   ItemDescription,
   ItemTitle,
   LogoContainer,
-  ItemButton,
+  ItemContainer,
 } from "./ProjectsElements";
 
 const ItemWrapper = (props) => {
@@ -16,9 +16,9 @@ const ItemWrapper = (props) => {
 
   return (
     <>
-      <ItemButton onClick={handleClick}>
+      <ItemContainer onClick={handleClick} isClicked={isClicked}>
         <ItemTitle>{props.item.title}</ItemTitle>
-      </ItemButton>
+      </ItemContainer>
       {isClicked ? (
         <ItemContent>
           <ItemDescription>{props.item.description}</ItemDescription>
