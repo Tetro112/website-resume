@@ -18,6 +18,7 @@ export const NavContainer = styled.nav`
 
 export const NavLogo = styled.img`
   margin-left: 10px;
+  cursor: pointer;
 `;
 
 export const NavLinksContainer = styled.ul`
@@ -46,6 +47,7 @@ export const NavLinks = styled.li`
     background: #202034;
     border-bottom: 3px solid #ffca9f;
     color: #e59a6f;
+    cursor: pointer;
   }
 `;
 
@@ -115,4 +117,12 @@ export const NavLinksMobileText = styled.p`
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+`;
+
+export const NavLinksAnchor = styled.p`
+  color: #ffca9f;
+  &:hover {
+    color: #bf9777;
+    cursor: pointer;
+  }
 `;

@@ -1,21 +1,21 @@
 import styled from "styled-components";
 import { FaGithub } from "react-icons/fa";
 //Constants
-const primary = "#202034";
+const primary = "#000015";
 const secondary = "#E59A6F";
 
 export const UpdatesContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1.5fr 8fr;
-  background: #e59a6f;
+  background-image: linear-gradient(to bottom right, ${primary}, #101025);
   width: 100%;
   justify-content: center;
   height: ${window.innerHeight - 80}px;
 `;
 
 export const UpdatesTitle = styled.h1`
-  color: ${primary};
+  color: ${secondary};
   font-size: max(30px, 5vw);
   justify-self: center;
   height: 5%;
@@ -27,6 +27,15 @@ export const UpdatesTitle = styled.h1`
 export const GitActivityContainer = styled.div`
   width: 70%;
   justify-self: center;
+  box-shadow: 0px -20px 50px 30px #202035;
+  /* -webkit-box-shadow: 0px -15px 50px 10px #202035;
+  -moz-box-shadow: 0px -15px 25px 10px #202035; */
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    /* box-shadow: 0px -15px 25px 10px #202035;
+    -webkit-box-shadow: 0px -15px 25px 10px #202035;
+    -moz-box-shadow: 0px -15px 25px 10px #202035; */
+  } ;
 `;
 //-----------------------------------------------------------------------------------------------------
 //Header components
@@ -34,11 +43,14 @@ export const Header = styled.div`
   display: flex;
   width: 100%;
   height: 100px;
-  background: ${primary};
+  background-image: linear-gradient(to bottom right, #000015, #101025);
   place-items: center;
   border-radius: 6px 6px 0px 0px;
   position: relative;
   z-index: 1;
+
+  @media screen and (max-width: 768px) {
+  } ;
 `;
 
 export const ProfileName = styled.h2`
@@ -115,11 +127,15 @@ export const Event = styled.li`
   align-items: center;
   background: #303045;
   border-bottom: 3px solid ${primary};
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background: #3d3d57;
+  }
 `;
 
 export const EventIcon = styled.div`
   margin-left: 2%;
-  transform: scale(2);
+  transform: scale(2.5);
   color: ${secondary};
 `;
 
@@ -154,4 +170,8 @@ export const EventTime = styled.h5`
   margin-right: 2%;
   margin-left: auto;
   color: #1c0a00;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: ${secondary};
+  }
 `;
